@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="main-nav--background" role="navigation" aria-label="Main">
+      <div class="main-nav block-x">
+        <div class="main-nav--left">
+          <a href="./index.html"
+            ><img
+              class="icon"
+              src="./assets/logos/coffee-beans.svg"
+              alt="coffee bean logo"
+          /></a>
+          <h2 class="main-nav__heading"><a href="./index.html">nitro</a></h2>
+        </div>
+        <div class="main-nav--right">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./index.html">ABOUT</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./pages/menu.html">MENU</a>
+            </li>
+            <li class="main-nav__item active">
+              <a class="main-nav__link" href="./pages/menu.html">SHOP NOW</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero hero--background">
+      <div class="block-x grid grid--1x2">
+        <header class="hero__content">
+          <h1 class="hero__headline">Nitro Coffee</h1>
+          <p class="hero__subheadline">
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain Coffea species.
+          </p>
+          <a
+            href="./pages/menu.html
+              "
+            class="btn btn--color"
+            >SHOP NOW</a
+          >
+          <div class="btn btn-decoration btn-decoration--hero"></div>
+        </header>
+
+        <div class="hero__image-container">
+          <img
+            class="hero__image"
+            src="./assets/images/coffeebeans-hero.png"
+            alt="coffee bag"
+          />
+        </div>
+      </div>
+    </section>
+
+    <main class=" product product--background">
+      <div class="block-x">
+        <header>
+          <h2>Our Products</h2>
+        </header>
+        <section class="cards block-y grid grid--1x2 grid--1x3">
+          <article class="card">
+            <img
+              class="card__image"
+              src="./assets/images/coffeebeans.png"
+              alt="coffee beans"
+            />
+            <div class="card__content">
+              <div class="card__heading--left">
+                <h3 class="card__heading">Coffee Beans</h3>
+                <p class="card__subheading">Pack of 3</p>
+              </div>
+              <p class="card__price">$19</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__image"
+              src="./assets/images/coldbrew.png"
+              alt="coffee beans"
+            />
+            <div class="card__content">
+              <div class="card__heading--left">
+                <h3 class="card__heading">Cold Brew</h3>
+                <p class="card__subheading">1 can</p>
+              </div>
+              <p class="card__price">$5</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__image"
+              src="./assets/images/inhousebrew.png"
+              alt="coffee beans"
+            />
+            <div class="card__content">
+              <div class="card__heading--left">
+                <h3 class="card__heading">In-house Brew</h3>
+                <p class="card__subheading">1 cup</p>
+              </div>
+              <p class="card__price">$3</p>
+            </div>
+          </article>
+        </section>
+        <a
+          href="./pages/menu.html
+          "
+          class="btn btn--color"
+          >VIEW ALL</a
+        >
+        <div class="btn btn-decoration btn-decoration--product"></div>
+      </div>
+    </main>
+
+    <!-- discount -->
+    <aside class="discount">
+      <article class="disscount__content grid grid--1x2">
+        <section class="discount__content-detail">
+          <h3 class="discount__title">We're Different</h3>
+          <p class="discount__subtitle">
+            We grow and roast our own beans. Every bean, every cup, every step
+            of the way, we strive for excellence.
+          </p>
+          <section class="discount__icon-group">
+            <img
+              class="icon discount__icon"
+              src="./assets/logos/planting.svg"
+              alt="planting"
+            />
+            <img
+              class="icon discount__icon"
+              src="./assets/logos/coffee-beans.svg"
+              alt="beans"
+            />
+            <img
+              class="icon discount__icon"
+              src="./assets/logos/coffee-cup.svg"
+              alt="cup"
+            />
+          </section>
+
+          <a
+            href="./pages/menu.html
+            "
+            class="btn btn--color"
+            >Learn More</a
+          >
+          <div class="btn btn-decoration btn-decoration--discount"></div>
+        </section>
+
+        <div class="disccount__image-group">
+          <figurecation class="disscount__image--wraper"
+            ><img
+              class="discount__content-detail disscount__image"
+              src="./assets/images/tiltedcan.png"
+              alt="tiltedcan"
+          /></figurecation>
+          <div class="disscount__image--decoration"></div>
+        </div>
+      </article>
+
+      <p class="discount__text">
+        Get 20% off your first order with code:
+        <span class="highlight">FirstNitro</span>
+      </p>
+    </aside>
+
+    <!-- footer -->
+
+    <footer class="footer--background">
+      <div class="footer__beans--wrap">
+        <img
+          class="footer__beans footer__beans--left"
+          src="./assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="Coffee Beans Logo and Footer"
+        />
+          <img
+            class="footer__beans footer__beans--right"
+            src="./assets/logos/coffee-beans-logo-and-footer.svg"
+            alt="Coffee Beans Logo and Footer"
+          />
+      </div>
+      <div class="footer grid grid--1x2 grid--1x3 block-x ">
+        <section class="footer__item">
+          <h3 class="footer__heading">Address</h3>
+          <div class="footer__content">
+            <p>503 Broadway Penthouse</p>
+            <p>New York</p>
+          </div>
+        </section>
+        <section class="footer__item">
+          <h3 class="footer__heading">Hours</h3>
+          <div class="footer__content">
+            <p><span class="highlight">Monday - Friday:</span> 9am - 7pm</p>
+            <p><span class="highlight">Saturday - Sunday:</span> 10am - 5pm</p>
+          </div>
+        </section>
+        <section class="footer__item">
+          <h3 class="footer__heading">Social</h3>
+          <div class="footer__content">
+            <a href="https://www.facebook.com/"
+              ><img
+                class="icon"
+                src="./assets/logos/Facebook-Icon.svg"
+                alt="facebook"
+            /></a>
+            <a href="https://business.yelp.com/"
+              ><img class="icon" src="./assets/logos/Yelp-Icon.svg" alt="yelp"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                class="icon"
+                src="./assets/logos/Instagram-Icon.svg"
+                alt="instagram"
+            /></a>
+          </div>
+        </section>
+      
+      </div>
+    </footer>
+  </body>
+</html>
