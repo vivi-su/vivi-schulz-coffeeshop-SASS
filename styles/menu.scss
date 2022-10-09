@@ -1,46 +1,46 @@
+@use './partials/variables';
+@use './partials/mixins';
+
 /*menu-hero*/
 .menu-hero {
+@include mixins.flexed(row,center,center);
+
   background-image: url(../assets/images/coffee-circle.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .menu-hero__headline {
+  @include mixins.flexed(row,center,center);
   color: #fff;
   min-width: 280px;
   max-width: 300px;
   min-height: 180px;
   max-height: 200px;
   height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   position: relative;
-  left:150px;
+  left: 150px;
 }
 
-.menu-hero__headline--color{
-  background-color: var(--color-primary);
-  
+.menu-hero__headline--color {
+  background-color: variables.$color-primary;
 }
 
-.menu-hero__headline--decoration{
-  border:5px solid var(--color-highlight);
+.menu-hero__headline--decoration {
+  border: 5px solid variables.$color-highlight;
   position: relative;
   left: -145px;
-  top:-15px;
+  top: -15px;
 }
-
 
 /*menu-nav*/
 
 .menu-nav {
-  background-color: var(--color-primary);
+  background-color: variables.$color-primary;
   text-align: center;
   padding: 3rem;
 }
@@ -56,7 +56,7 @@
 }
 
 .menu-nav__item {
-  border-left: 3px solid var(--color-highlight);
+  border-left: 3px solid variables.$color-highlight;
 }
 
 /*main menu*/
@@ -71,7 +71,7 @@
 }
 
 .menu__price {
-  color: var(--color-highlight);
+  color: variables.$color-highlight;
   font-size: 2.4rem;
 }
 
@@ -87,11 +87,12 @@
   padding-top: 4rem;
 }
 
-.hot-drinks,
-.pastries {
-  background-color: var(--color-nitro-pink);
+.cold-drinks {
+  background-color: variables.$color-lightgrey;
 }
 
-.cold-drinks {
-  background-color: var(--color-lightgrey);
+.pastries,
+.hot-drinks{
+  background-color: variables.$color-nitro-pink;
 }
+

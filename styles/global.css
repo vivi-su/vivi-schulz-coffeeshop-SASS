@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #393939;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  font-weight: 400;
+}
+nav h2 {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+nav a {
+  color: #393939;
+}
+
+.main-nav--background {
+  background-color: #fff0ed;
+  padding: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav--left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__list {
+  padding-left: 3rem;
+}
+.main-nav__list li {
+  display: inline-block;
+}
+
+.main-nav__item {
+  padding: 1rem 2rem 0.5rem;
+}
+
+.main-nav__list > .active > a {
+  color: #5bacc3;
+}
+
+/*footer*/
+.footer--background {
+  background-color: #fff0ed;
+}
+
+.footer {
+  padding: 6rem 0;
+}
+
+.footer__heading {
+  font-size: 3.3rem;
+  font-weight: 300;
+  padding: 3rem 0 2rem;
+}
+
+.footer__content {
+  padding-bottom: 3rem;
+}
+
+.footer__item {
+  padding: 0 5rem;
+}
+
+.footer__beans--wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  opacity: 0.5;
+}
+
+.footer__beans {
+  position: absolute;
+  width: 150px;
+}
+.footer__beans--left {
+  top: 30px;
+  left: -60px;
+}
+.footer__beans--right {
+  top: 130px;
+  right: -50px;
+}
+
+/*icon*/
+.icon {
+  min-width: 30px;
+  max-width: 70px;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/*grid*/
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=global.css.map */

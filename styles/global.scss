@@ -1,4 +1,5 @@
-/*Typography*/
+@use "./partials/variables";
+@use './partials/mixins';
 
 html {
   scroll-behavior: smooth;
@@ -12,28 +13,18 @@ html {
   box-sizing: inherit;
 }
 
-:root {
-  --color-primary: #393939;
-  --color-highlight: #5bacc3;
-  --color-nitro-pink: #fff0ed;
-  --color-grey: #909090;
-  --color-lightgrey: #f7f7f7;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  color: var(--color-primary);
+  color: variables.$color-primary;
   line-height: 1.5;
 }
 
-a,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-}
+  a{
+    text-decoration: none;
+  }
+
 
 h1,
 h2 {
@@ -50,47 +41,43 @@ h3 {
   font-weight: 700;
 }
 
-/*nav*/
-nav ul {
-  list-style: none;
-}
+nav {
+  ul {
+    list-style: none;
+    font-weight: 400;
+  }
 
-nav h2 {
-  font-size: 3.3rem;
-  font-weight: 300;
-}
+  h2 {
+    font-size: 3.3rem;
+    font-weight: 300;
+  }
 
-nav ul {
-  font-weight: 400;
-}
-
-nav a {
-  color: var(--color-primary);
+  a{
+    color:variables.$color-primary;
+  }
 }
 
 .main-nav--background {
-  background-color: var(--color-nitro-pink);
+  background-color: variables.$color-nitro-pink;
+
   padding: 2rem;
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include mixins.flexed(row,space-between,center);
 }
 
 .main-nav--left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-nav__list li {
-  display: inline-block;
+  @include mixins.flexed(row,center,center);
 }
 
 .main-nav__list {
+  
   padding-left: 3rem;
+
+  li{
+    display: inline-block;
+  }
 }
 
 .main-nav__item {
@@ -98,12 +85,13 @@ nav a {
 }
 
 .main-nav__list > .active > a {
-  color: var(--color-highlight);
+  color: variables.$color-highlight;
 }
+
 
 /*footer*/
 .footer--background {
-  background-color: var(--color-nitro-pink);
+  background-color: variables.$color-nitro-pink;
 }
 .footer {
   padding: 6rem 0;
@@ -124,9 +112,8 @@ nav a {
 }
 
 .footer__beans--wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+   @include mixins.flexed(row,space-between,center);
+
   position: relative;
   opacity: 0.5;
 }
@@ -134,14 +121,16 @@ nav a {
 .footer__beans {
   position: absolute;
   width: 150px;
-}
-.footer__beans--left {
+
+&--left {
   top: 30px;
   left: -60px;
 }
-.footer__beans--right {
+  &--right {
   top: 130px;
   right: -50px;
+}
+
 }
 
 /*icon*/
@@ -151,13 +140,11 @@ nav a {
   padding: 1rem;
 }
 
-/*global container*/
-.block-x {
+
+.container {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-
 
 /*grid*/
 .grid {

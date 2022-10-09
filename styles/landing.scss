@@ -1,0 +1,219 @@
+@use './partials/variables';
+@use './partials/mixins';
+
+/*btn*/
+ 
+.btn {
+  border: 0;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #fff;
+  min-width: 180px;
+  max-width:200px;
+  padding: 2rem;
+  margin: 2rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn--color{
+  background-color: variables.$color-highlight;
+  
+}
+
+.btn-decoration{
+  border:2px solid black;
+  position:relative;
+}
+
+.btn-decoration--hero{
+  height:71.5px;
+  top:-118px;
+  left:-7px;
+}
+
+.btn-decoration--product{
+  height:71.5px;
+  top:42px;
+  left:-230px;
+}
+
+.btn-decoration--discount{
+  height:71.5px;
+  top:-118px;
+  left:-7px;
+}
+
+
+/*hero*/
+.hero {
+  @include mixins.flexed(row,space-around,center);
+}
+
+.hero__content {
+  @include mixins.flexed(column,center,flex-start);
+
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.hero--background {
+  background-color: variables.$color-nitro-pink;
+}
+
+.hero__subheadline {
+  padding: 3rem 0;
+}
+
+.hero__image-container {
+
+  @include mixins.flexed(row,center,center);
+  padding: 2rem;
+  margin: 2rem;
+}
+
+@media screen and (min-width:768px){
+  .hero__image-container{
+  justify-content: flex-end;
+  }
+}
+
+/*product-card*/
+.product {
+  padding:6rem 0;
+  text-align: center;
+}
+
+.product--background {
+  background-color: variables.$color-lightgrey;
+}
+
+.cards {
+  padding: 4rem;
+  margin: 2rem;
+
+  gap: 10px;
+}
+
+.card {
+  @include mixins.flexed(column,space-between,center);
+  
+  justify-content: space-between;
+  min-width: 33rem;
+  max-width: 35rem;
+  min-height: 44rem;
+  max-height: 46rem;
+  padding-top: 4rem;
+  margin: 2rem auto;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.card__image {
+  padding-bottom: 2rem;
+}
+
+.card__content {
+  @include mixins.flexed(row,space-between,center);
+  background-color: variables.$color-nitro-pink;
+  width: 100%;
+  padding: 2rem 3rem;
+}
+
+.card__heading {
+  padding: 2rem 0;
+}
+
+.card__price {
+  color: variables.$color-highlight;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.card__heading--left {
+  @include mixins.flexed(column,center,flex-start);
+  line-height: 1.1;
+}
+
+.card__subheading {
+  color: variables.$color-grey;
+}
+
+/*discount*/
+.discount {
+  max-width: 80%;
+  margin: 20rem auto;
+ 
+}
+
+
+
+.disscount__content{
+  justify-items: center;
+  margin-bottom: 10rem;
+}
+
+.discount__content-detail{
+  @include mixins.flexed(column,flex-start,center);
+
+ padding-left:50px;
+ padding-top: 20px;
+ 
+}
+
+.disscount__image{
+  min-height:240px;
+  max-height: 550px;
+  position: relative;
+  top:70px;
+  left:100px;
+}
+
+.disscount__image--wraper{
+  min-width: 400px;
+  max-width:500px;
+  width:500px;
+  height:500px;
+  padding:20px;
+  margin: 20px;
+  background-color:variables.$color-nitro-pink;
+background-image: url(../assets/logos/coldbrewbackground.png);
+background-size: cover;
+  
+}
+
+.disscount__image--decoration{
+
+  border:5px solid variables.$color-highlight;
+z-index: 999;
+width:500px;
+height:500px;
+display: inline-block;
+position: absolute;
+transform: translateX(1px)translateY(-17px);
+}
+
+.disccount__image-group{
+  @include mixins.flexed(row,space-between,center);
+ 
+  position: relative;
+}
+
+.discount__title{
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.discount__subtitle{
+  padding-bottom: 2rem;
+}
+
+.discount__text {
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: variables.$color-primary;
+  color: #fff;
+  padding:2rem;
+}
