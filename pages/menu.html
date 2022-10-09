@@ -16,20 +16,16 @@
   </head>
 
   <body>
-    <nav
-      class="main-nav--background"
-      role="navigation"
-      aria-label="Main"
-    >
-      <div class="main-nav container">
+    <nav class="main-nav--background" role="navigation" aria-label="Main">
+      <div class="main-nav">
         <div class="main-nav--left">
           <a href="../index.html"
             ><img
-              class="icon"
+              class="main-nav__icon"
               src="../assets/logos/coffee-beans.svg"
               alt="coffee bean logo"
           /></a>
-          <h2 class="main-nav__heading"><a href="./index.html">nitro</a></h2>
+          <h2 class="main-nav__heading"><a href="../index.html">nitro</a></h2>
         </div>
         <div class="main-nav--right">
           <ul class="main-nav__list">
@@ -39,7 +35,7 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="../pages/menu.html">MENU</a>
             </li>
-            <li class="main-nav__item active">
+            <li class="main-nav__item main-nav__item active">
               <a class="main-nav__link" href="../pages/menu.html">SHOP NOW</a>
             </li>
           </ul>
@@ -67,7 +63,7 @@
     </nav>
 
     <main class="menu">
-      <article class="menu-block hot-drinks" id="hot-drink">
+      <article class="menu--block menu--hot-drinks" id="hot-drink">
         <h2 class="menu__headline">Hot Drinks</h2>
         <h3 class="menu__subheadline">In-house Brew</h3>
         <p class="menu__content">
@@ -85,7 +81,7 @@
         <p class="menu__price">$4.99</p>
       </article>
 
-      <article class="menu-block cold-drinks" id="cold-drink">
+      <article class="menu-block menu--cold-drinks" id="cold-drink">
         <h2 class="menu__headline">Cold Drinks</h2>
         <h3 class="menu__subheadline">Cold Brew</h3>
         <p class="menu__content">
@@ -102,7 +98,7 @@
         <p class="menu__price">$6.99</p>
       </article>
 
-      <article class="menu-block pastries" id="pastry">
+      <article class="menu-block menu--pastries" id="pastry">
         <h2 class="menu__headline">Pastries</h2>
         <h3 class="menu__subheadline">Bacon Oatmeal Raisin Cookie</h3>
         <p class="menu__content">

@@ -16,11 +16,11 @@
   </head>
   <body>
     <nav class="main-nav--background" role="navigation" aria-label="Main">
-      <div class="main-nav container">
+      <div class="main-nav">
         <div class="main-nav--left">
           <a href="./index.html"
             ><img
-              class="icon"
+              class="main-nav__icon"
               src="./assets/logos/coffee-beans.svg"
               alt="coffee bean logo"
           /></a>
@@ -43,7 +43,7 @@
     </nav>
 
     <section class="hero hero--background">
-      <div class="container grid grid--1x2">
+      <div class="hero__group grid grid--1x2">
         <header class="hero__content">
           <h1 class="hero__headline">Nitro Coffee</h1>
           <p class="hero__subheadline">
@@ -56,7 +56,7 @@
             class="btn btn--color"
             >SHOP NOW</a
           >
-          <div class="btn btn-decoration btn-decoration--hero"></div>
+          <div class="btn btn--decoration btn--decoration-hero"></div>
         </header>
 
         <div class="hero__image-container">
@@ -69,12 +69,12 @@
       </div>
     </section>
 
-    <main class=" product product--background">
-      <div class="container">
+    <main class="product product--background">
+      <div class="product__group">
         <header>
           <h2>Our Products</h2>
         </header>
-        <section class="cards block-y grid grid--1x2 grid--1x3">
+        <section class="cards grid grid--1x2 grid--1x3">
           <article class="card">
             <img
               class="card__image"
@@ -82,7 +82,7 @@
               alt="coffee beans"
             />
             <div class="card__content">
-              <div class="card__heading--left">
+              <div class="card__heading-left">
                 <h3 class="card__heading">Coffee Beans</h3>
                 <p class="card__subheading">Pack of 3</p>
               </div>
@@ -124,7 +124,7 @@
           class="btn btn--color"
           >VIEW ALL</a
         >
-        <div class="btn btn-decoration btn-decoration--product"></div>
+        <div class="btn btn--decoration btn--decoration-product"></div>
       </div>
     </main>
 
@@ -139,17 +139,17 @@
           </p>
           <section class="discount__icon-group">
             <img
-              class="icon discount__icon"
+              class="discount__icon"
               src="./assets/logos/planting.svg"
               alt="planting"
             />
             <img
-              class="icon discount__icon"
+              class="discount__icon"
               src="./assets/logos/coffee-beans.svg"
               alt="beans"
             />
             <img
-              class="icon discount__icon"
+              class="discount__icon"
               src="./assets/logos/coffee-cup.svg"
               alt="cup"
             />
@@ -161,23 +161,23 @@
             class="btn btn--color"
             >Learn More</a
           >
-          <div class="btn btn-decoration btn-decoration--discount"></div>
+          <div class="btn btn--decoration btn--decoration-discount"></div>
         </section>
 
         <div class="disccount__image-group">
-          <figurecation class="disscount__image--wraper"
+          <figurecation class="disscount__image-background"
             ><img
-              class="discount__content-detail disscount__image"
+              class="disscount__image"
               src="./assets/images/tiltedcan.png"
               alt="tiltedcan"
           /></figurecation>
-          <div class="disscount__image--decoration"></div>
+          <div class="disscount__image-decoration"></div>
         </div>
       </article>
 
       <p class="discount__text">
         Get 20% off your first order with code:
-        <span class="highlight">FirstNitro</span>
+        <span class="discount__text--highlight">FirstNitro</span>
       </p>
     </aside>
 
@@ -190,13 +190,13 @@
           src="./assets/logos/coffee-beans-logo-and-footer.svg"
           alt="Coffee Beans Logo and Footer"
         />
-          <img
-            class="footer__beans footer__beans--right"
-            src="./assets/logos/coffee-beans-logo-and-footer.svg"
-            alt="Coffee Beans Logo and Footer"
-          />
+        <img
+          class="footer__beans footer__beans--right"
+          src="./assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="Coffee Beans Logo and Footer"
+        />
       </div>
-      <div class="footer grid grid--1x2 grid--1x3 container ">
+      <div class="footer footer__group grid grid--1x2 grid--1x3">
         <section class="footer__item">
           <h3 class="footer__heading">Address</h3>
           <div class="footer__content">
@@ -231,7 +231,6 @@
             /></a>
           </div>
         </section>
-      
       </div>
     </footer>
   </body>

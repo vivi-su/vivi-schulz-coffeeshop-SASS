@@ -4,3 +4,16 @@
     justify-content:$justify;
     align-items:$align;
 }
+
+@mixin container(){
+  max-width: 1400px;
+  width:100%;
+  margin: 0 auto;
+}
+
+@mixin icon() {
+  min-width: 30px;
+  max-width: 70px;
+  width: 100%;
+  padding: 1rem;
+}

@@ -1,5 +1,5 @@
 @use "./partials/variables";
-@use './partials/mixins';
+@use "./partials/mixins";
 
 html {
   scroll-behavior: smooth;
@@ -21,10 +21,9 @@ body {
   line-height: 1.5;
 }
 
-  a{
-    text-decoration: none;
-  }
-
+a {
+  text-decoration: none;
+}
 
 h1,
 h2 {
@@ -35,10 +34,6 @@ h2 {
 h3 {
   font-size: 3.3rem;
   font-weight: 300;
-}
-
-.highlight {
-  font-weight: 700;
 }
 
 nav {
@@ -52,98 +47,85 @@ nav {
     font-weight: 300;
   }
 
-  a{
-    color:variables.$color-primary;
+  a {
+    color: variables.$color-primary;
   }
 }
 
-.main-nav--background {
-  background-color: variables.$color-nitro-pink;
-
-  padding: 2rem;
-}
+/*-----main nav bar------ */
 
 .main-nav {
-  @include mixins.flexed(row,space-between,center);
-}
+  @include mixins.flexed(row, space-between, center);
+  @include mixins.container();
+  &--background {
+    background-color: variables.$color-nitro-pink;
 
-.main-nav--left {
-  @include mixins.flexed(row,center,center);
+    padding: 2rem;
+  }
+  &--left {
+  @include mixins.flexed(row, center, center);
 }
-
-.main-nav__list {
-  
+  &__list {
   padding-left: 3rem;
 
-  li{
+  li {
     display: inline-block;
   }
 }
-
-.main-nav__item {
+  &__item {
   padding: 1rem 2rem 0.5rem;
 }
+  &__icon{
+    @include mixins.icon();
+  }
+}
+
 
 .main-nav__list > .active > a {
   color: variables.$color-highlight;
 }
 
-
 /*footer*/
-.footer--background {
-  background-color: variables.$color-nitro-pink;
-}
+
 .footer {
   padding: 6rem 0;
-}
 
-.footer__heading {
-  font-size: 3.3rem;
-  font-weight: 300;
-  padding: 3rem 0 2rem;
-}
+  &--background {
+    background-color: variables.$color-nitro-pink;
+  }
+  &__group {
+    @include mixins.container();
+  }
+  &__heading {
+    font-size: 3.3rem;
+    font-weight: 300;
+    padding: 3rem 0 2rem;
+  }
+  &__content {
+    padding-bottom: 3rem;
+  }
+  &__item {
+    padding: 0 5rem;
+  }
+  &__beans--wrap {
+    @include mixins.flexed(row, space-between, center);
 
-.footer__content {
-  padding-bottom: 3rem;
-}
+    position: relative;
+    opacity: 0.5;
+  }
+  &__beans {
+    position: absolute;
+    width: 150px;
 
-.footer__item {
-  padding: 0 5rem;
-}
-
-.footer__beans--wrap {
-   @include mixins.flexed(row,space-between,center);
-
-  position: relative;
-  opacity: 0.5;
-}
-
-.footer__beans {
-  position: absolute;
-  width: 150px;
-
-&--left {
-  top: 30px;
-  left: -60px;
-}
-  &--right {
-  top: 130px;
-  right: -50px;
-}
-
-}
-
-/*icon*/
-.icon {
-  min-width: 30px;
-  max-width: 70px;
-  padding: 1rem;
-}
-
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+    &--left {
+      top: 30px;
+      left: -60px;
+    }
+    &--right {
+      top: 130px;
+      right: -50px;
+    }
+  }
 }
 
 /*grid*/
