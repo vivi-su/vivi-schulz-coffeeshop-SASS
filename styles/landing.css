@@ -122,18 +122,95 @@
   max-width: 80%;
   margin: 20rem auto;
 }
+.discount__title {
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
 
 .disscount__content {
   justify-items: center;
   margin-bottom: 10rem;
 }
 
+.discount__content-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.discount__icon {
+  margin-right: 5rem;
+  min-width: 30px;
+  max-width: 70px;
+  width: 100%;
+  padding: 1rem;
+}
+.discount__iconicon--group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*----coffee can spin effect ---*/
 .discount__image {
   min-height: 240px;
   max-height: 550px;
   position: relative;
   top: 70px;
   left: 130px;
+}
+.discount__image:hover {
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+.discount__image__subtitle {
+  padding-bottom: 2rem;
+}
+.discount__image__text {
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: #393939;
+  color: #fff;
+  padding: 2rem;
+}
+.discount__image__text--highlight {
+  font-weight: 700;
+}
+
+.disscount__image-background {
+  min-width: 400px;
+  max-width: 500px;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff0ed;
+  background-image: url(../assets/logos/coldbrewbackground.png);
+  background-size: cover;
+}
+
+.disscount__image-decoration {
+  border: 5px solid #5bacc3;
+  z-index: 999;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  transform: translateX(1px) translateY(-17px);
+}
+
+.disccount__image-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 @-webkit-keyframes spin {
@@ -152,78 +229,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-.disscount__image-background {
-  min-width: 400px;
-  max-width: 500px;
-  width: 500px;
-  height: 500px;
-  padding: 20px;
-  margin: 20px;
-  background-color: #fff0ed;
-  background-image: url(../assets/logos/coldbrewbackground.png);
-  background-size: cover;
-}
-
-.discount__content-detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 50px;
-  padding-top: 20px;
-}
-
-.disscount__image-decoration {
-  border: 5px solid #5bacc3;
-  z-index: 999;
-  width: 500px;
-  height: 500px;
-  display: inline-block;
-  position: absolute;
-  transform: translateX(1px) translateY(-17px);
-}
-
-.disccount__image-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.discount__title {
-  font-size: 5rem;
-  padding-bottom: 2rem;
-}
-
-.discount__subtitle {
-  padding-bottom: 2rem;
-}
-
-.discount__text {
-  font-size: 4.5rem;
-  font-weight: 400;
-  text-align: center;
-  background-color: #393939;
-  color: #fff;
-  padding: 2rem;
-}
-.discount__text--highlight {
-  font-weight: 700;
-}
-
-.discount__icon-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.discount__icon {
-  margin-right: 5rem;
-  min-width: 30px;
-  max-width: 70px;
-  width: 100%;
-  padding: 1rem;
 }/*# sourceMappingURL=landing.css.map */

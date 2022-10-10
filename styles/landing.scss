@@ -108,6 +108,11 @@
 .discount {
   max-width: 80%;
   margin: 20rem auto;
+
+  &__title {
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
 }
 
 .disscount__content{  
@@ -115,10 +120,23 @@
     margin-bottom: 10rem;
   }
 
+.discount__content-detail {
+  @include mixins.flexed(column, center, flex-start);
+
+  padding-left: 50px;
+  padding-top: 20px;
+}
 
 
-  // animation: spin 2s infinite linear;
+.discount__icon {
+  margin-right: 5rem;
+  @include mixins.icon();
+  &icon--group {
+  @include mixins.flexed(row, flex-start, center);
+}
+}
 
+/*----coffee can spin effect ---*/
 
 .discount__image {
   min-height: 240px;
@@ -126,26 +144,26 @@
   position: relative;
   top: 70px;
   left: 130px;
-
-
+&:hover{
+  animation: spin 2s infinite linear;
 }
+&__subtitle {
+  padding-bottom: 2rem;
+}
+  &__text {
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: variables.$color-primary;
+  color: #fff;
+  padding: 2rem;
 
-
-
-  
-    
-
-
-
-
-@keyframes spin{
-  from{
-    transform:rotate(0);
-  }
-  to{
-    transform:rotate(360deg);
+  &--highlight {
+    font-weight: 700;
   }
 }
+}
+
 
 .disscount__image-background {
   min-width: 400px;
@@ -160,12 +178,6 @@
 }
 
 
-.discount__content-detail {
-  @include mixins.flexed(column, center, flex-start);
-
-  padding-left: 50px;
-  padding-top: 20px;
-}
 
 
 
@@ -175,6 +187,8 @@
   width: 500px;
   height: 500px;
   display: inline-block;
+  position:relative;
+
   position: absolute;
   transform: translateX(1px) translateY(-17px);
 }
@@ -185,33 +199,11 @@
   position: relative;
 }
 
-.discount__title {
-  font-size: 5rem;
-  padding-bottom: 2rem;
-}
-
-.discount__subtitle {
-  padding-bottom: 2rem;
-}
-
-.discount__text {
-  font-size: 4.5rem;
-  font-weight: 400;
-  text-align: center;
-  background-color: variables.$color-primary;
-  color: #fff;
-  padding: 2rem;
-
-  &--highlight {
-    font-weight: 700;
+@keyframes spin{
+  from{
+    transform:rotate(0);
   }
-}
-
-.discount__icon-group {
-  @include mixins.flexed(row, flex-start, center);
-}
-
-.discount__icon {
-  margin-right: 5rem;
-  @include mixins.icon();
+  to{
+    transform:rotate(360deg);
+  }
 }
