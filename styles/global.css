@@ -18,7 +18,10 @@ body {
   line-height: 1.5;
 }
 
-a {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
 }
 
@@ -43,6 +46,54 @@ nav h2 {
 }
 nav a {
   color: #393939;
+}
+
+/*btn*/
+.btn {
+  border: 0;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #fff;
+  min-width: 180px;
+  max-width: 200px;
+  padding: 2rem;
+  margin: 2rem;
+  display: inline-block;
+  text-align: center;
+}
+.btn--color {
+  background-color: #5bacc3;
+}
+.btn--decoration {
+  border: 2px solid black;
+  position: relative;
+}
+.btn--decoration-hero {
+  height: 71.5px;
+  top: -118px;
+  left: -7px;
+}
+.btn--decoration-hero:hover {
+  top: -113px;
+  left: 0;
+}
+.btn--decoration-product {
+  height: 71.5px;
+  top: 42px;
+  left: -230px;
+}
+.btn--decoration-product:hover {
+  top: 47px;
+  left: -225px;
+}
+.btn--decoration-discount {
+  height: 71.5px;
+  top: -118px;
+  left: -7px;
+}
+.btn--decoration-discount:hover {
+  top: -112px;
+  left: -1px;
 }
 
 /*-----main nav bar------ */

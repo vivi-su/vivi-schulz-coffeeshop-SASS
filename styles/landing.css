@@ -1,39 +1,3 @@
-/*btn*/
-.btn {
-  border: 0;
-  font-size: 2.1rem;
-  font-weight: 400;
-  color: #fff;
-  min-width: 180px;
-  max-width: 200px;
-  padding: 2rem;
-  margin: 2rem;
-  display: inline-block;
-  text-align: center;
-}
-.btn--color {
-  background-color: #5bacc3;
-}
-.btn--decoration {
-  border: 2px solid black;
-  position: relative;
-}
-.btn--decoration-hero {
-  height: 71.5px;
-  top: -118px;
-  left: -7px;
-}
-.btn--decoration-product {
-  height: 71.5px;
-  top: 42px;
-  left: -230px;
-}
-.btn--decoration-discount {
-  height: 71.5px;
-  top: -118px;
-  left: -7px;
-}
-
 /*hero*/
 .hero {
   display: flex;
@@ -164,14 +128,31 @@
   margin-bottom: 10rem;
 }
 
-.disscount__image {
+.discount__image {
   min-height: 240px;
   max-height: 550px;
   position: relative;
   top: 70px;
-  left: 100px;
+  left: 130px;
 }
 
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .disscount__image-background {
   min-width: 400px;
   max-width: 500px;
