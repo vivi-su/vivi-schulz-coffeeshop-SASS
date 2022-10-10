@@ -170,18 +170,38 @@
 .discount__image__subtitle {
   padding-bottom: 2rem;
 }
-.discount__image__text {
+
+.discount-text {
   font-size: 4.5rem;
   font-weight: 400;
   text-align: center;
   background-color: #393939;
   color: #fff;
   padding: 2rem;
+  -webkit-animation: color-change 2.5s alternate infinite;
+          animation: color-change 2.5s alternate infinite;
 }
-.discount__image__text--highlight {
+.discount-text__highlight {
   font-weight: 700;
 }
 
+@-webkit-keyframes color-change {
+  from {
+    background: #393939;
+  }
+  to {
+    background: #5bacc3;
+  }
+}
+
+@keyframes color-change {
+  from {
+    background: #393939;
+  }
+  to {
+    background: #5bacc3;
+  }
+}
 .disscount__image-background {
   min-width: 400px;
   max-width: 500px;

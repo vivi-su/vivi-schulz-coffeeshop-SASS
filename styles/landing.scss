@@ -145,19 +145,33 @@
   &__subtitle {
     padding-bottom: 2rem;
   }
-  &__text {
+}
+
+.discount-text {
     font-size: 4.5rem;
     font-weight: 400;
     text-align: center;
     background-color: variables.$color-primary;
     color: #fff;
-    padding: 2rem;
+    padding: 2rem; 
 
-    &--highlight {
+animation: color-change 2.5s alternate infinite;
+
+
+&__highlight {
       font-weight: 700;
     }
+}
+
+@keyframes color-change {
+  from {
+    background:variables.$color-primary;
+  } 
+  to {
+    background:variables.$color-highlight;
   }
 }
+  
 
 .disscount__image-background {
   min-width: 400px;
